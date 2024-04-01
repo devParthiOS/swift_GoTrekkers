@@ -7,23 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D3F289B2BBA887A00CADD08 /* MountainsofChristmas-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D3F28992BBA887A00CADD08 /* MountainsofChristmas-Bold.ttf */; };
+		0D3F289C2BBA887A00CADD08 /* MountainsofChristmas-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D3F289A2BBA887A00CADD08 /* MountainsofChristmas-Regular.ttf */; };
+		0D3F289E2BBA8A4B00CADD08 /* NotoSans_Condensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D3F289D2BBA8A4B00CADD08 /* NotoSans_Condensed-Bold.ttf */; };
+		0D3F28A02BBA8A6100CADD08 /* NotoSans_Condensed-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D3F289F2BBA8A6100CADD08 /* NotoSans_Condensed-ExtraLight.ttf */; };
+		0D3F28A22BBA8A7000CADD08 /* NotoSans_Condensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D3F28A12BBA8A7000CADD08 /* NotoSans_Condensed-Light.ttf */; };
+		0D3F28A42BBA8A7C00CADD08 /* NotoSans_Condensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D3F28A32BBA8A7C00CADD08 /* NotoSans_Condensed-Medium.ttf */; };
+		0D3F28A62BBA8AA000CADD08 /* NotoSans_Condensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D3F28A52BBA8AA000CADD08 /* NotoSans_Condensed-Regular.ttf */; };
+		0D5265FA2BBA96EF00CE41A5 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5265F92BBA96EF00CE41A5 /* CustomButton.swift */; };
 		0DA7D8CB2BBA738A00F46B90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7D8CA2BBA738A00F46B90 /* AppDelegate.swift */; };
-		0DA7D8CD2BBA738A00F46B90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7D8CC2BBA738A00F46B90 /* SceneDelegate.swift */; };
-		0DA7D8CF2BBA738A00F46B90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7D8CE2BBA738A00F46B90 /* ViewController.swift */; };
+		0DA7D8CF2BBA738A00F46B90 /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7D8CE2BBA738A00F46B90 /* HomeScreenVC.swift */; };
 		0DA7D8D22BBA738A00F46B90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DA7D8D02BBA738A00F46B90 /* Main.storyboard */; };
 		0DA7D8D42BBA738D00F46B90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DA7D8D32BBA738D00F46B90 /* Assets.xcassets */; };
 		0DA7D8D72BBA738D00F46B90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DA7D8D52BBA738D00F46B90 /* LaunchScreen.storyboard */; };
+		0DD305022BBAC83D00E5AA83 /* CustomTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD305012BBAC83D00E5AA83 /* CustomTBC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D3F28992BBA887A00CADD08 /* MountainsofChristmas-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MountainsofChristmas-Bold.ttf"; sourceTree = "<group>"; };
+		0D3F289A2BBA887A00CADD08 /* MountainsofChristmas-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MountainsofChristmas-Regular.ttf"; sourceTree = "<group>"; };
+		0D3F289D2BBA8A4B00CADD08 /* NotoSans_Condensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans_Condensed-Bold.ttf"; sourceTree = "<group>"; };
+		0D3F289F2BBA8A6100CADD08 /* NotoSans_Condensed-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans_Condensed-ExtraLight.ttf"; sourceTree = "<group>"; };
+		0D3F28A12BBA8A7000CADD08 /* NotoSans_Condensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans_Condensed-Light.ttf"; sourceTree = "<group>"; };
+		0D3F28A32BBA8A7C00CADD08 /* NotoSans_Condensed-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans_Condensed-Medium.ttf"; sourceTree = "<group>"; };
+		0D3F28A52BBA8AA000CADD08 /* NotoSans_Condensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans_Condensed-Regular.ttf"; sourceTree = "<group>"; };
+		0D5265F92BBA96EF00CE41A5 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		0DA7D8C72BBA738A00F46B90 /* Go Trekkers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Go Trekkers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DA7D8CA2BBA738A00F46B90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0DA7D8CC2BBA738A00F46B90 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0DA7D8CE2BBA738A00F46B90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0DA7D8CE2BBA738A00F46B90 /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
 		0DA7D8D12BBA738A00F46B90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0DA7D8D32BBA738D00F46B90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DA7D8D62BBA738D00F46B90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DA7D8D82BBA738D00F46B90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DD305012BBAC83D00E5AA83 /* CustomTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTBC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +53,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D3F28982BBA875300CADD08 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0D3F28992BBA887A00CADD08 /* MountainsofChristmas-Bold.ttf */,
+				0D3F289D2BBA8A4B00CADD08 /* NotoSans_Condensed-Bold.ttf */,
+				0D3F289F2BBA8A6100CADD08 /* NotoSans_Condensed-ExtraLight.ttf */,
+				0D3F28A52BBA8AA000CADD08 /* NotoSans_Condensed-Regular.ttf */,
+				0D3F28A12BBA8A7000CADD08 /* NotoSans_Condensed-Light.ttf */,
+				0D3F289A2BBA887A00CADD08 /* MountainsofChristmas-Regular.ttf */,
+				0D3F28A32BBA8A7C00CADD08 /* NotoSans_Condensed-Medium.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		0D5265F82BBA96DB00CE41A5 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				0D5265F92BBA96EF00CE41A5 /* CustomButton.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		0DA7D8BE2BBA738A00F46B90 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +94,15 @@
 		0DA7D8C92BBA738A00F46B90 /* Go Trekkers */ = {
 			isa = PBXGroup;
 			children = (
+				0D5265F82BBA96DB00CE41A5 /* Custom */,
+				0D3F28982BBA875300CADD08 /* fonts */,
 				0DA7D8CA2BBA738A00F46B90 /* AppDelegate.swift */,
-				0DA7D8CC2BBA738A00F46B90 /* SceneDelegate.swift */,
-				0DA7D8CE2BBA738A00F46B90 /* ViewController.swift */,
+				0DA7D8CE2BBA738A00F46B90 /* HomeScreenVC.swift */,
 				0DA7D8D02BBA738A00F46B90 /* Main.storyboard */,
 				0DA7D8D32BBA738D00F46B90 /* Assets.xcassets */,
 				0DA7D8D52BBA738D00F46B90 /* LaunchScreen.storyboard */,
 				0DA7D8D82BBA738D00F46B90 /* Info.plist */,
+				0DD305012BBAC83D00E5AA83 /* CustomTBC.swift */,
 			);
 			path = "Go Trekkers";
 			sourceTree = "<group>";
@@ -125,8 +165,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D3F28A42BBA8A7C00CADD08 /* NotoSans_Condensed-Medium.ttf in Resources */,
+				0D3F289C2BBA887A00CADD08 /* MountainsofChristmas-Regular.ttf in Resources */,
+				0D3F289B2BBA887A00CADD08 /* MountainsofChristmas-Bold.ttf in Resources */,
+				0D3F28A02BBA8A6100CADD08 /* NotoSans_Condensed-ExtraLight.ttf in Resources */,
 				0DA7D8D72BBA738D00F46B90 /* LaunchScreen.storyboard in Resources */,
+				0D3F28A22BBA8A7000CADD08 /* NotoSans_Condensed-Light.ttf in Resources */,
 				0DA7D8D42BBA738D00F46B90 /* Assets.xcassets in Resources */,
+				0D3F289E2BBA8A4B00CADD08 /* NotoSans_Condensed-Bold.ttf in Resources */,
+				0D3F28A62BBA8AA000CADD08 /* NotoSans_Condensed-Regular.ttf in Resources */,
 				0DA7D8D22BBA738A00F46B90 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +185,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DA7D8CF2BBA738A00F46B90 /* ViewController.swift in Sources */,
+				0DA7D8CF2BBA738A00F46B90 /* HomeScreenVC.swift in Sources */,
+				0D5265FA2BBA96EF00CE41A5 /* CustomButton.swift in Sources */,
+				0DD305022BBAC83D00E5AA83 /* CustomTBC.swift in Sources */,
 				0DA7D8CB2BBA738A00F46B90 /* AppDelegate.swift in Sources */,
-				0DA7D8CD2BBA738A00F46B90 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

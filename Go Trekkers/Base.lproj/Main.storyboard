@@ -1,24 +1,216 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fb9-Ks-QoJ">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="MountainsofChristmas-Bold.ttf">
+            <string>MountainsofChristmas-Bold</string>
+        </array>
+        <array key="NotoSans_Condensed-Medium.ttf">
+            <string>NotoSansCondensed-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Home ScreenVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeScreenVC" customModule="Go_Trekkers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GO TREKERS HS" translatesAutoresizingMaskIntoConstraints="NO" id="Cbu-Rz-oVP">
+                                <rect key="frame" x="98.333333333333329" y="133" width="196.33333333333337" height="196.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Cbu-Rz-oVP" secondAttribute="height" multiplier="1:1" id="C8g-SP-x95"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="WM1-L8-uzG">
+                                <rect key="frame" x="32" y="379.66666666666669" width="329.33333333333331" height="223.00000000000006"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F28-mC-XNf">
+                                        <rect key="frame" x="95.666666666666686" y="0.0" width="138" height="61.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="MountainsofChristmas-Bold" family="Mountains of Christmas" pointSize="44"/>
+                                        <color key="textColor" name="primary"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Venture into the wilderness, where every step is a journey of self-discovery amidst nature's grandeur." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oa-n0-zRq">
+                                        <rect key="frame" x="0.0" y="81.3333333333333" width="329.33333333333331" height="141.66666666666663"/>
+                                        <fontDescription key="fontDescription" name="NotoSansCondensed-Medium" family="Noto Sans Condensed" pointSize="26"/>
+                                        <color key="textColor" name="secondary"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jsw-3o-5lS" customClass="CustomButton" customModule="Go_Trekkers" customModuleProvider="target">
+                                <rect key="frame" x="32" y="752" width="329.33333333333331" height="33.333333333333371"/>
+                                <color key="backgroundColor" name="secondary"/>
+                                <color key="tintColor" name="primary"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Let's Trekk"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                        <color key="value" name="secondary"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="buttonColor">
+                                        <color key="value" name="secondary"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="iJo-jw-3I4" kind="show" id="DKb-ER-XyO"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="darkGreen"/>
+                        <constraints>
+                            <constraint firstItem="Cbu-Rz-oVP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="0JS-zU-7QZ"/>
+                            <constraint firstItem="Jsw-3o-5lS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="J9G-IA-wM3"/>
+                            <constraint firstItem="WM1-L8-uzG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Key-qg-9o3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="WM1-L8-uzG" secondAttribute="trailing" constant="20" id="Ksl-Th-MbH"/>
+                            <constraint firstItem="Cbu-Rz-oVP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="Pg0-k0-bLy"/>
+                            <constraint firstItem="WM1-L8-uzG" firstAttribute="top" secondItem="Cbu-Rz-oVP" secondAttribute="bottom" constant="50" id="Q4V-vx-7FA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jsw-3o-5lS" secondAttribute="bottom" constant="32.666666666666742" id="TTg-Wx-jIl"/>
+                            <constraint firstItem="Cbu-Rz-oVP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TXf-OM-q59"/>
+                            <constraint firstItem="WM1-L8-uzG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="coR-tQ-5hW"/>
+                            <constraint firstItem="Jsw-3o-5lS" firstAttribute="width" secondItem="WM1-L8-uzG" secondAttribute="width" id="fm5-HW-oeU"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="njD-lf-nxv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1907.6335877862596" y="-34.507042253521128"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="fE8-Ba-rbj">
+            <objects>
+                <viewController id="FYb-qE-JBd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HXR-Xb-PXY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ubl-dS-dcF"/>
+                        <color key="backgroundColor" name="darkGreen"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Yzw-Va-m1z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0hd-UL-qtX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3696.9465648854962" y="-35.211267605633807"/>
+        </scene>
+        <!--CustomTBC-->
+        <scene sceneID="MJA-xn-uc3">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="iJo-jw-3I4" customClass="CustomTBC" customModule="Go_Trekkers" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="ifn-q2-Xg3"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QmI-AD-Zj9">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="primary"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="FYb-qE-JBd" kind="relationship" relationship="viewControllers" id="sou-Yv-Umz"/>
+                        <segue destination="Lsw-cC-lbo" kind="relationship" relationship="viewControllers" id="3CB-vm-N8e"/>
+                        <segue destination="iob-5z-p7r" kind="relationship" relationship="viewControllers" id="Cen-x3-jyy"/>
+                        <segue destination="M5i-K7-bwa" kind="relationship" relationship="viewControllers" id="ttb-ZR-JzP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RBQ-I4-hMb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2770.2290076335876" y="-35.211267605633807"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="pGR-04-cGf">
+            <objects>
+                <viewController id="Lsw-cC-lbo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wck-Hm-eMS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="kPq-Yh-Wqc"/>
+                        <color key="backgroundColor" name="darkGreen"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="sjG-Gz-iI0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4oE-Re-F0T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1844" y="-728"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="uKb-dh-C4d">
+            <objects>
+                <viewController id="iob-5z-p7r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aHX-YF-FNq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2gt-po-q0E"/>
+                        <color key="backgroundColor" name="darkGreen"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="cAK-Bb-9Nw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KNZ-UP-7mj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2770" y="-728"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="uXa-Hh-K1m">
+            <objects>
+                <viewController id="M5i-K7-bwa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zwe-Pb-dX5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lZa-0X-zng"/>
+                        <color key="backgroundColor" name="darkGreen"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="zKk-xj-HVp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gCq-h7-WeU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2779" y="709"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Ru-Os-RqC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fb9-Ks-QoJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wog-Vp-xSV">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oA9-eQ-svW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0d9-Hd-kag" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980.91603053435108" y="-34.507042253521128"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="Jsw-3o-5lS">
+            <size key="intrinsicContentSize" width="103.33333333333333" height="33.333333333333336"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="GO TREKERS HS" width="500" height="500"/>
+        <namedColor name="darkGreen">
+            <color red="0.10599999874830246" green="0.25900000333786011" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.62000000476837158" green="0.7839999794960022" blue="0.72500002384185791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondary">
+            <color red="0.36100000143051147" green="0.51399999856948853" blue="0.45500001311302185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
