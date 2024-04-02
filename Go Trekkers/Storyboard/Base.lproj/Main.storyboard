@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -48,11 +49,13 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jsw-3o-5lS" customClass="CustomButton" customModule="Go_Trekkers" customModuleProvider="target">
-                                <rect key="frame" x="32" y="752" width="329.33333333333331" height="33.333333333333371"/>
+                                <rect key="frame" x="32" y="744" width="329.33333333333331" height="41.333333333333371"/>
                                 <color key="backgroundColor" name="secondary"/>
                                 <color key="tintColor" name="primary"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Let's Trekk"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Let's Trekk">
+                                    <fontDescription key="titleFontDescription" name="NotoSansCondensed-Bold" family="Noto Sans Condensed" pointSize="20"/>
+                                </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
                                         <color key="value" name="secondary"/>
@@ -90,21 +93,114 @@
             </objects>
             <point key="canvasLocation" x="1907.6335877862596" y="-34.507042253521128"/>
         </scene>
-        <!--Item-->
+        <!--Mountain-->
         <scene sceneID="fE8-Ba-rbj">
             <objects>
-                <viewController id="FYb-qE-JBd" sceneMemberID="viewController">
+                <viewController id="FYb-qE-JBd" customClass="MountainsVC" customModule="Go_Trekkers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HXR-Xb-PXY">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ypu-Ub-vMy">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MountainTBCell" rowHeight="127" id="Kqo-16-JRW" customClass="MountainTBCell" customModule="Go_Trekkers" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="127"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kqo-16-JRW" id="T8V-Lq-K1X">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="127"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Lf-Pc-gji">
+                                                    <rect key="frame" x="177" y="47.666666666666664" width="43" height="31.999999999999993"/>
+                                                    <fontDescription key="fontDescription" name="MountainsofChristmas-Bold" family="Mountains of Christmas" pointSize="23"/>
+                                                    <color key="textColor" name="primary"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GO TREKERS" translatesAutoresizingMaskIntoConstraints="NO" id="mbx-4W-cgN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="127" height="127"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="mbx-4W-cgN" secondAttribute="height" multiplier="1:1" id="hPO-oD-tAy"/>
+                                                        <constraint firstAttribute="height" constant="100" id="jl9-CZ-92v"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4l-Mx-nhp">
+                                                    <rect key="frame" x="0.0" y="126" width="393" height="1"/>
+                                                    <color key="backgroundColor" name="primary"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="yPj-a5-2Da"/>
+                                                    </constraints>
+                                                </view>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowshape.right.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kOr-Ua-Jxh">
+                                                    <rect key="frame" x="333.66666666666669" y="45.666666666666664" width="39.333333333333314" height="36"/>
+                                                    <color key="tintColor" name="primary"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="kOr-Ua-Jxh" secondAttribute="height" multiplier="1:1" id="Qn3-76-iUG"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6Lf-Pc-gji" secondAttribute="trailing" constant="20" id="5Qo-sk-BE9"/>
+                                                <constraint firstAttribute="bottom" secondItem="l4l-Mx-nhp" secondAttribute="bottom" id="CYY-iv-lab"/>
+                                                <constraint firstItem="l4l-Mx-nhp" firstAttribute="leading" secondItem="T8V-Lq-K1X" secondAttribute="leading" id="GD5-wl-fjS"/>
+                                                <constraint firstItem="mbx-4W-cgN" firstAttribute="leading" secondItem="T8V-Lq-K1X" secondAttribute="leading" id="IK5-Ah-hgV"/>
+                                                <constraint firstItem="6Lf-Pc-gji" firstAttribute="centerY" secondItem="T8V-Lq-K1X" secondAttribute="centerY" id="Ove-pr-ePZ"/>
+                                                <constraint firstItem="6Lf-Pc-gji" firstAttribute="leading" secondItem="mbx-4W-cgN" secondAttribute="trailing" constant="50" id="Zoh-aq-vSp"/>
+                                                <constraint firstAttribute="bottom" secondItem="mbx-4W-cgN" secondAttribute="bottom" id="e7H-bm-shI"/>
+                                                <constraint firstItem="mbx-4W-cgN" firstAttribute="top" secondItem="T8V-Lq-K1X" secondAttribute="top" id="iLr-5g-vmN"/>
+                                                <constraint firstAttribute="trailing" secondItem="kOr-Ua-Jxh" secondAttribute="trailing" constant="20" id="jCZ-b5-Shg"/>
+                                                <constraint firstAttribute="trailing" secondItem="l4l-Mx-nhp" secondAttribute="trailing" id="jhJ-NZ-I4i"/>
+                                                <constraint firstItem="kOr-Ua-Jxh" firstAttribute="width" secondItem="T8V-Lq-K1X" secondAttribute="width" multiplier="0.1" id="sAf-md-zx5"/>
+                                                <constraint firstItem="kOr-Ua-Jxh" firstAttribute="centerY" secondItem="T8V-Lq-K1X" secondAttribute="centerY" id="yBT-Dn-11T"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="mountainImg" destination="mbx-4W-cgN" id="F5M-8e-6EG"/>
+                                            <outlet property="mountainLbl" destination="6Lf-Pc-gji" id="gTe-Yn-vI3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="FYb-qE-JBd" id="fD8-cn-ESn"/>
+                                    <outlet property="delegate" destination="FYb-qE-JBd" id="FlU-9V-lYW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ubl-dS-dcF"/>
                         <color key="backgroundColor" name="darkGreen"/>
+                        <constraints>
+                            <constraint firstItem="ubl-dS-dcF" firstAttribute="trailing" secondItem="ypu-Ub-vMy" secondAttribute="trailing" id="1cM-ju-vML"/>
+                            <constraint firstItem="ubl-dS-dcF" firstAttribute="bottom" secondItem="ypu-Ub-vMy" secondAttribute="bottom" id="DZO-MW-xWB"/>
+                            <constraint firstItem="ypu-Ub-vMy" firstAttribute="leading" secondItem="ubl-dS-dcF" secondAttribute="leading" id="cgI-qA-x0L"/>
+                            <constraint firstItem="ypu-Ub-vMy" firstAttribute="top" secondItem="ubl-dS-dcF" secondAttribute="top" id="sPN-DC-pOE"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Yzw-Va-m1z"/>
+                    <tabBarItem key="tabBarItem" title="Mountain" image="mountain" selectedImage="mountain" id="Yzw-Va-m1z"/>
+                    <connections>
+                        <outlet property="mountainTV" destination="ypu-Ub-vMy" id="DlU-CS-Ayu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0hd-UL-qtX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3696.9465648854962" y="-35.211267605633807"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2VG-2F-pFS">
+            <objects>
+                <viewController id="guF-mQ-dq5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o9U-nr-Rgm">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="L60-HY-kmx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u3n-gj-njA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4593" y="-32"/>
         </scene>
         <!--CustomTBC-->
         <scene sceneID="MJA-xn-uc3">
@@ -115,7 +211,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QmI-AD-Zj9">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="secondary"/>
                         <color key="barTintColor" name="primary"/>
                     </tabBar>
                     <connections>
@@ -129,7 +225,7 @@
             </objects>
             <point key="canvasLocation" x="2770.2290076335876" y="-35.211267605633807"/>
         </scene>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="pGR-04-cGf">
             <objects>
                 <viewController id="Lsw-cC-lbo" sceneMemberID="viewController">
@@ -139,43 +235,43 @@
                         <viewLayoutGuide key="safeArea" id="kPq-Yh-Wqc"/>
                         <color key="backgroundColor" name="darkGreen"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="sjG-Gz-iI0"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map" selectedImage="map" id="sjG-Gz-iI0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4oE-Re-F0T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1844" y="-728"/>
+            <point key="canvasLocation" x="2770" y="-728"/>
         </scene>
-        <!--Item-->
+        <!--Equipment-->
         <scene sceneID="uKb-dh-C4d">
             <objects>
-                <viewController id="iob-5z-p7r" sceneMemberID="viewController">
+                <viewController id="iob-5z-p7r" customClass="EquipmentsVC" customModule="Go_Trekkers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aHX-YF-FNq">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="2gt-po-q0E"/>
                         <color key="backgroundColor" name="darkGreen"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="cAK-Bb-9Nw"/>
+                    <tabBarItem key="tabBarItem" title="Equipment" image="flashlight" selectedImage="flashlight" id="cAK-Bb-9Nw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KNZ-UP-7mj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2770" y="-728"/>
+            <point key="canvasLocation" x="3697" y="-728"/>
         </scene>
-        <!--Item-->
+        <!--Checklist-->
         <scene sceneID="uXa-Hh-K1m">
             <objects>
-                <viewController id="M5i-K7-bwa" sceneMemberID="viewController">
+                <viewController id="M5i-K7-bwa" customClass="ChecklistVC" customModule="Go_Trekkers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zwe-Pb-dX5">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="lZa-0X-zng"/>
                         <color key="backgroundColor" name="darkGreen"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="zKk-xj-HVp"/>
+                    <tabBarItem key="tabBarItem" title="Checklist" image="checklist" selectedImage="checklist" id="zKk-xj-HVp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gCq-h7-WeU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2779" y="709"/>
+            <point key="canvasLocation" x="3697" y="718"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1Ru-Os-RqC">
@@ -198,11 +294,17 @@
     </scenes>
     <designables>
         <designable name="Jsw-3o-5lS">
-            <size key="intrinsicContentSize" width="103.33333333333333" height="33.333333333333336"/>
+            <size key="intrinsicContentSize" width="114" height="41.333333333333336"/>
         </designable>
     </designables>
     <resources>
+        <image name="GO TREKERS" width="500" height="500"/>
         <image name="GO TREKERS HS" width="500" height="500"/>
+        <image name="arrowshape.right.fill" catalog="system" width="128" height="104"/>
+        <image name="checklist" width="20" height="20"/>
+        <image name="flashlight" width="20" height="20"/>
+        <image name="map" width="20" height="20"/>
+        <image name="mountain" width="20" height="20"/>
         <namedColor name="darkGreen">
             <color red="0.10599999874830246" green="0.25900000333786011" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -212,5 +314,8 @@
         <namedColor name="secondary">
             <color red="0.36100000143051147" green="0.51399999856948853" blue="0.45500001311302185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

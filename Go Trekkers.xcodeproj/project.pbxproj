@@ -15,6 +15,10 @@
 		0D3F28A42BBA8A7C00CADD08 /* NotoSans_Condensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D3F28A32BBA8A7C00CADD08 /* NotoSans_Condensed-Medium.ttf */; };
 		0D3F28A62BBA8AA000CADD08 /* NotoSans_Condensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D3F28A52BBA8AA000CADD08 /* NotoSans_Condensed-Regular.ttf */; };
 		0D5265FA2BBA96EF00CE41A5 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5265F92BBA96EF00CE41A5 /* CustomButton.swift */; };
+		0D6658782BBBE7170071C9F9 /* MountainsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6658772BBBE7170071C9F9 /* MountainsVC.swift */; };
+		0D66587A2BBBE72D0071C9F9 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6658792BBBE72D0071C9F9 /* MapVC.swift */; };
+		0D66587C2BBBE7610071C9F9 /* EquipmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66587B2BBBE7610071C9F9 /* EquipmentsVC.swift */; };
+		0D66587E2BBBE7830071C9F9 /* ChecklistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D66587D2BBBE7830071C9F9 /* ChecklistVC.swift */; };
 		0DA7D8CB2BBA738A00F46B90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7D8CA2BBA738A00F46B90 /* AppDelegate.swift */; };
 		0DA7D8CF2BBA738A00F46B90 /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA7D8CE2BBA738A00F46B90 /* HomeScreenVC.swift */; };
 		0DA7D8D22BBA738A00F46B90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DA7D8D02BBA738A00F46B90 /* Main.storyboard */; };
@@ -32,6 +36,10 @@
 		0D3F28A32BBA8A7C00CADD08 /* NotoSans_Condensed-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans_Condensed-Medium.ttf"; sourceTree = "<group>"; };
 		0D3F28A52BBA8AA000CADD08 /* NotoSans_Condensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans_Condensed-Regular.ttf"; sourceTree = "<group>"; };
 		0D5265F92BBA96EF00CE41A5 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		0D6658772BBBE7170071C9F9 /* MountainsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainsVC.swift; sourceTree = "<group>"; };
+		0D6658792BBBE72D0071C9F9 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		0D66587B2BBBE7610071C9F9 /* EquipmentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentsVC.swift; sourceTree = "<group>"; };
+		0D66587D2BBBE7830071C9F9 /* ChecklistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistVC.swift; sourceTree = "<group>"; };
 		0DA7D8C72BBA738A00F46B90 /* Go Trekkers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Go Trekkers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DA7D8CA2BBA738A00F46B90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DA7D8CE2BBA738A00F46B90 /* HomeScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
@@ -53,7 +61,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D3F28982BBA875300CADD08 /* fonts */ = {
+		0D3F28982BBA875300CADD08 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				0D3F28992BBA887A00CADD08 /* MountainsofChristmas-Bold.ttf */,
@@ -64,15 +72,45 @@
 				0D3F289A2BBA887A00CADD08 /* MountainsofChristmas-Regular.ttf */,
 				0D3F28A32BBA8A7C00CADD08 /* NotoSans_Condensed-Medium.ttf */,
 			);
-			path = fonts;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		0D5265F82BBA96DB00CE41A5 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				0DD305012BBAC83D00E5AA83 /* CustomTBC.swift */,
 				0D5265F92BBA96EF00CE41A5 /* CustomButton.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		0D66587F2BBBE78C0071C9F9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0DA7D8CE2BBA738A00F46B90 /* HomeScreenVC.swift */,
+				0D6658772BBBE7170071C9F9 /* MountainsVC.swift */,
+				0D6658792BBBE72D0071C9F9 /* MapVC.swift */,
+				0D66587B2BBBE7610071C9F9 /* EquipmentsVC.swift */,
+				0D66587D2BBBE7830071C9F9 /* ChecklistVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0D6658802BBBE7C40071C9F9 /* EntryPoint */ = {
+			isa = PBXGroup;
+			children = (
+				0DA7D8CA2BBA738A00F46B90 /* AppDelegate.swift */,
+			);
+			path = EntryPoint;
+			sourceTree = "<group>";
+		};
+		0D6658812BBBE82A0071C9F9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0DA7D8D52BBA738D00F46B90 /* LaunchScreen.storyboard */,
+				0DA7D8D02BBA738A00F46B90 /* Main.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		0DA7D8BE2BBA738A00F46B90 = {
@@ -94,15 +132,13 @@
 		0DA7D8C92BBA738A00F46B90 /* Go Trekkers */ = {
 			isa = PBXGroup;
 			children = (
+				0D6658812BBBE82A0071C9F9 /* Storyboard */,
+				0D6658802BBBE7C40071C9F9 /* EntryPoint */,
+				0D3F28982BBA875300CADD08 /* Fonts */,
 				0D5265F82BBA96DB00CE41A5 /* Custom */,
-				0D3F28982BBA875300CADD08 /* fonts */,
-				0DA7D8CA2BBA738A00F46B90 /* AppDelegate.swift */,
-				0DA7D8CE2BBA738A00F46B90 /* HomeScreenVC.swift */,
-				0DA7D8D02BBA738A00F46B90 /* Main.storyboard */,
+				0D66587F2BBBE78C0071C9F9 /* ViewControllers */,
 				0DA7D8D32BBA738D00F46B90 /* Assets.xcassets */,
-				0DA7D8D52BBA738D00F46B90 /* LaunchScreen.storyboard */,
 				0DA7D8D82BBA738D00F46B90 /* Info.plist */,
-				0DD305012BBAC83D00E5AA83 /* CustomTBC.swift */,
 			);
 			path = "Go Trekkers";
 			sourceTree = "<group>";
@@ -186,9 +222,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DA7D8CF2BBA738A00F46B90 /* HomeScreenVC.swift in Sources */,
+				0D66587A2BBBE72D0071C9F9 /* MapVC.swift in Sources */,
 				0D5265FA2BBA96EF00CE41A5 /* CustomButton.swift in Sources */,
+				0D66587C2BBBE7610071C9F9 /* EquipmentsVC.swift in Sources */,
 				0DD305022BBAC83D00E5AA83 /* CustomTBC.swift in Sources */,
+				0D6658782BBBE7170071C9F9 /* MountainsVC.swift in Sources */,
 				0DA7D8CB2BBA738A00F46B90 /* AppDelegate.swift in Sources */,
+				0D66587E2BBBE7830071C9F9 /* ChecklistVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
