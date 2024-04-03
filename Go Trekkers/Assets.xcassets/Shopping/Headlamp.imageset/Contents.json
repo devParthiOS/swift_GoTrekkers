@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Headlamp:Flashlight.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
