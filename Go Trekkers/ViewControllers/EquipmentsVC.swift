@@ -82,13 +82,14 @@ extension EquipmentsVC : UICollectionViewDelegate ,UICollectionViewDataSource,UI
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "EquipmentBuyVC") as! EquipmentBuyVC
+        vc.productData = self.equipmentData[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }
 
 class EquipmentBuyVC : UIViewController {
-    
+    var productData : (name: String, details: String,url : URL?)?
     @IBOutlet weak var bgView: UIView!
     
     @IBOutlet weak var descriptionLbl: UILabel!
@@ -97,7 +98,19 @@ class EquipmentBuyVC : UIViewController {
         super.viewDidLoad()
         self.bgView.layer.cornerRadius = 20
         self.bgView.clipsToBounds = true
+        self.loadData(productData: productData!)
     }
     
+    @IBAction func buyBtn(_ sender: UIButton) {
+        if UIApplication.shared.canOpenURL((productData?.url)!) {
+                UIApplication.shared.open((productData?.url)!, options: [:], completionHandler: nil)
+            } else {
+                print("Cannot open URL")
+            }
+    }
+    func loadData(productData : (name: String, details: String,url : URL?)) {
+        self.productLbl.text = productData.name
+        self.descriptionLbl.text = productData.details
+    }
     
 }
